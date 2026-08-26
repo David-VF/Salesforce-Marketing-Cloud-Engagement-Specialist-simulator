@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive Salesforce Certified Marketing Cloud Engagement Specialist Exam Simulator with 129 practice questions, dual-shuffle engine, study and exam modes, and real-time scoring.">
+  <title>Marketing Cloud Engagement Specialist Simulator — 129 Practice Questions</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📧</text></svg>">
+</head>
+<body>
+
+  <!-- ===== LOADING OVERLAY ===== -->
+  <div class="loading-overlay" id="loading-overlay">
+    <div class="loading-card">
+      <div class="loading-spinner"></div>
+      <h2>Loading Question Bank</h2>
+      <p>Loading 129 Marketing Cloud practice questions…</p>
+      <div class="loading-progress-bar"><div class="loading-progress-fill" id="loading-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ===== PASSWORD GATE OVERLAY ===== -->
+  <div class="password-overlay" id="password-overlay">
+    <div class="password-card">
+      <div class="password-lock-icon">🔒</div>
+      <h2>Authorized Access Only</h2>
+      <p>Please enter the access password to start the simulator.</p>
+      <form id="password-form" class="password-form" onsubmit="checkPassword(event)">
+        <div class="password-input-wrapper">
+          <input type="password" id="password-input" placeholder="Enter password" required autofocus autocomplete="current-password">
+          <div class="password-error" id="password-error" style="display: none;">❌ Incorrect password. Please try again.</div>
+        </div>
+        <button type="submit" class="password-submit-btn">Unlock Simulator</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===== APP HEADER ===== -->
+  <header class="app-header hidden">
+    <div class="header-top">
+      <!-- Brand -->
+      <div class="header-brand">
+        <div class="logo-icon">📧</div>
+        <h1>
+          Marketing Cloud Engagement Specialist
+          <span>Salesforce Certified · 129 Practice Questions</span>
+        </h1>
+      </div>
+
+      <!-- Global Score Matrix -->
+      <div class="score-matrix">
+        <div class="score-pill" id="pill-progress">
+          📝 Progress: <span class="pill-value">0/129</span>
+        </div>
+        <div class="score-pill" id="pill-score">
+          🎯 Score: <span class="pill-value">0.0%</span>
+        </div>
+        <div class="score-pill" id="pill-status">
+          📊 Status: <span class="pill-value">Not Started</span>
+        </div>
+
+        <!-- Exam Timer (hidden by default) -->
+        <div class="exam-timer" id="exam-timer">
+          <span class="timer-icon">⏱️</span>
+          <span id="timer-text">01:45:00</span>
+        </div>
+
+        <!-- Submit Exam Button (hidden by default) -->
+        <button class="submit-exam-btn" id="submit-exam-btn">Submit Exam</button>
+      </div>
+
+      <!-- Mode Toggle -->
+      <div class="mode-toggle-wrapper">
+        <label for="mode-toggle">Study</label>
+        <input type="checkbox" class="toggle-switch" id="mode-toggle" aria-label="Toggle between Study and Exam mode">
+        <label for="mode-toggle">Exam</label>
+        <span class="commit-version-tag" title="Current version">v1.0</span>
+      </div>
+    </div>
+
+    <!-- Tab Navigation -->
+    <nav class="tab-nav" id="tab-nav" role="tablist" aria-label="Exam sections"></nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="app-container" class="hidden">
+    <div class="tab-content">
+      <!-- Tab 0: Dashboard & Guide -->
+      <div class="tab-pane active" id="tab-0" role="tabpanel"></div>
+
+      <!-- Tab 1: Email Sending & Deliverability (24%) -->
+      <div class="tab-pane" id="tab-1" role="tabpanel"></div>
+
+      <!-- Tab 2: Content Creation & Delivery (22%) -->
+      <div class="tab-pane" id="tab-2" role="tabpanel"></div>
+
+      <!-- Tab 3: Marketing Automation (28%) -->
+      <div class="tab-pane" id="tab-3" role="tabpanel"></div>
+
+      <!-- Tab 4: Subscriber & Data Management (16%) -->
+      <div class="tab-pane" id="tab-4" role="tabpanel"></div>
+
+      <!-- Tab 5: Insights & Analytics (10%) -->
+      <div class="tab-pane" id="tab-5" role="tabpanel"></div>
+
+      <!-- Tab 6: Full 129-Question Simulator -->
+      <div class="tab-pane" id="tab-6" role="tabpanel"></div>
+    </div>
+  </main>
+
+  <!-- ===== EXAM RESULTS OVERLAY ===== -->
+  <div class="results-overlay" id="results-overlay">
+    <div class="results-modal"></div>
+  </div>
+
+  <!-- ===== APPLICATION SCRIPT ===== -->
+  <script src="app.js?v=3.3"></script>
+
+</body>
+</html>
