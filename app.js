@@ -7,7 +7,7 @@
 
 // ---------- Category Constants ----------
 const CATEGORIES = {
-  EMAIL:      "Email Sending & Deliverability",
+  EMAIL:      "Email Marketing Best Practices",
   CONTENT:    "Content Creation & Delivery",
   AUTOMATION: "Marketing Automation",
   DATA:       "Subscriber & Data Management",
@@ -107,7 +107,7 @@ function unlockApp(instant = false) {
 const QUESTIONS = [
   {
     "id": 1,
-    "category": "Email Sending & Deliverability",
+    "category": "Email Marketing Best Practices",
     "question": "The marketing team at Northern Trail Outfitters observed a bounce rate of 23% for their last email send. Which best practice should they follow to uphold their sender reputation?",
     "choices": [
         "Nothing-bounce rates up to 30% are acceptable.",
@@ -119,7 +119,7 @@ const QUESTIONS = [
 },
   {
     "id": 2,
-    "category": "Email Sending & Deliverability",
+    "category": "Email Marketing Best Practices",
     "question": "An email marketer is creating an email to promote the new Northern Trail Outfitters mobile app. Which text should be used for the call-to-action button to drive the most engagement?",
     "choices": [
         "Our new mobile app",
@@ -131,7 +131,7 @@ const QUESTIONS = [
 },
   {
     "id": 3,
-    "category": "Email Sending & Deliverability",
+    "category": "Email Marketing Best Practices",
     "question": "Northern Trail Outfitters wants to use an AI-based approach to target subscribers who are not receiving too many emails but are engaging constantly with the emails sent to them. Which feature should help achieve this?",
     "choices": [
         "Einstein Messaging Insight",
@@ -143,19 +143,19 @@ const QUESTIONS = [
 },
   {
     "id": 4,
-    "category": "Email Sending & Deliverability",
+    "category": "Email Marketing Best Practices",
     "question": "A marketer has been asked to collect consumer information using Marketing Cloud for users obtained from social channels for future mailing. What should the marketer do to accomplish this?",
     "choices": [
         "Create CloudPages to collect and subscribe users.",
         "Use Journey Builder to build an audience using Ad Studio.",
         "Leverage Social Studio to capture email addresses."
     ],
-    "correctAnswerText": "Leverage Social Studio to capture email addresses.",
+    "correctAnswerText": "Create CloudPages to collect and subscribe users.",
     "explanation": "SMC Email is explicitly designed to capture, organize and act on\nprospect data on user information from external channels (social media links), and\ndirectly write those contacts into Data Extensions for future email sends. (B) Ad\nStudio is used for targeting existing audiences with digital advertising, not for net-\nnew data collection. Social Studio is a social media listening, publishing, en\nengagement tool, it’s not designed for capturing email addresses for mailing lists."
 },
   {
     "id": 5,
-    "category": "Email Sending & Deliverability",
+    "category": "Email Marketing Best Practices",
     "question": "Northern Trail Outfitters' customer base has high engagement on mobile devices, and a marketing intern is creating an email campaign tomorrow. Which mobile optimization option provides the quickest turnaround and easiest implementation?",
     "choices": [
         "Mobile Responsive",
@@ -167,7 +167,7 @@ const QUESTIONS = [
 },
   {
     "id": 6,
-    "category": "Email Sending & Deliverability",
+    "category": "Email Marketing Best Practices",
     "question": "Northern Trail Outfitters (NTO) is launching a post-purchase campaign that emails customers to ask for feedback on their most recent shopping experience. What should the NTO marketing team include in the email design to encourage a high response rate?",
     "choices": [
         "A call-to-action button that links to the feedback form",
@@ -179,7 +179,7 @@ const QUESTIONS = [
 },
   {
     "id": 7,
-    "category": "Email Sending & Deliverability",
+    "category": "Email Marketing Best Practices",
     "question": "A marketer at Northern Trail Outfitters is asked about whether there is an actual requirement of a dedicated IP to send emails. What is a key differentiator to get a dedicated IP rather than using a shared one?",
     "choices": [
         "Requirement to have Custom URLs on images hosted in Marketing Cloud",
@@ -191,19 +191,19 @@ const QUESTIONS = [
 },
   {
     "id": 8,
-    "category": "Email Sending & Deliverability",
+    "category": "Email Marketing Best Practices",
     "question": "A marketer with Northern Trail Outfitters needs to review how different variations of an email will render in different email clients. Which tool should the marketer use?",
     "choices": [
         "Send Preview",
         "Test Send",
         "Content Detective"
     ],
-    "correctAnswerText": "Test Send",
+    "correctAnswerText": "Send Preview",
     "explanation": "Allows marketers to see exactly how an email will render for different\nsubscribers, different data, and across multiple email clients and devices - all\nwithout sending anything. (B) Sends and actual version of the email directly to\nspecific internal email addresses for live testing. (C) Analyzes your email content\nto identify potential spam-triggering phrases and formatting issues that could hurt\ndeliverability."
 },
   {
     "id": 9,
-    "category": "Email Sending & Deliverability",
+    "category": "Email Marketing Best Practices",
     "question": "A marketer for Northern Trail Outfitters needs to see test emails for each subscriber in a data extension. What should the marketer do to ensure the data extension appears as a Recipient Test Data Extension in the Test Send menu?",
     "choices": [
         "Save the data extension in the Test Folder.",
@@ -215,19 +215,19 @@ const QUESTIONS = [
 },
   {
     "id": 10,
-    "category": "Email Sending & Deliverability",
+    "category": "Email Marketing Best Practices",
     "question": "Northern Trail Outfitters(NTO)wants to test Einstein Recommendations against the company's static product recommendations in a product return confirmation email. Next. NTO needs to evaluate the results and choose the winning option for future confirmations. Which journey type is best suited to run this test?",
     "choices": [
         "Multi-Step",
         "Single Send",
         "Transactional Send"
     ],
-    "correctAnswerText": "Transactional Send",
+    "correctAnswerText": "Multi-Step",
     "explanation": "Multi-Steps journeys support advanced split activities like Path\nOptimizer, which allows you to test different content variants (Einstein vs. static\nrecommendations) within the same stream, evaluate performance metrics, and\nautomatically route feature subscribers to the winning path. (B) Designed for\nlinear, one-time promotional blasts to a target audience and do not support\ndynamic testing branches. (C) Built solely for instantaneous, critical messages\n(like password resets) using a high-priority queue."
 },
   {
     "id": 11,
-    "category": "Email Sending & Deliverability",
+    "category": "Email Marketing Best Practices",
     "question": "Northern Trail Outfitters(NTO)is having an issue with bad email addresses coming into its website email signup form, impacting deliverability and sender reputation. What should NTO use to make sure email addresses are valid before adding to its audience?",
     "choices": [
         "A double opt-in at signup",
@@ -239,7 +239,7 @@ const QUESTIONS = [
 },
   {
     "id": 12,
-    "category": "Email Sending & Deliverability",
+    "category": "Email Marketing Best Practices",
     "question": "The marketing team at Northern Trail Outfitters is concerned about its email deliverability rates over the last three months. Which remediation tactic should be used to improve deliverability?",
     "choices": [
         "Broaden segmentation criteria to reach more diverse audiences.",
@@ -251,7 +251,7 @@ const QUESTIONS = [
 },
   {
     "id": 13,
-    "category": "Email Sending & Deliverability",
+    "category": "Email Marketing Best Practices",
     "question": "Northern Trail Outfitters(NTO)sends 500,000 emails per month and shares its sending domain and IP with other customers. Which action ensures NTO's sending reputation remains intact?",
     "choices": [
         "Implement an SAP with Private Domain and a Dedicated IP.",
@@ -263,7 +263,7 @@ const QUESTIONS = [
 },
   {
     "id": 14,
-    "category": "Email Sending & Deliverability",
+    "category": "Email Marketing Best Practices",
     "question": "The marketing team has been troubleshooting why an email was not sent to 10% of the audience within the data extension. When they review the tracking for the job ID, they see O subscribers were held or unsubscribed. Which additional issues should they consider?",
     "choices": [
         "Bounced contacts from previous sends",
@@ -275,7 +275,7 @@ const QUESTIONS = [
 },
   {
     "id": 15,
-    "category": "Email Sending & Deliverability",
+    "category": "Email Marketing Best Practices",
     "question": "An upcoming campaign at Northern Trail Outfitters (NTO) has an audience list larger than the company's daily sends. NTO's marketing team is concerned about this send affecting deliverability. Which feature should help NTO achieve this send while keeping deliverability metrics in mind?",
     "choices": [
         "Einstein Engagement Frequency",
@@ -287,7 +287,7 @@ const QUESTIONS = [
 },
   {
     "id": 16,
-    "category": "Email Sending & Deliverability",
+    "category": "Email Marketing Best Practices",
     "question": "A marketer wants to quickly view the link performance for a specific email, including Total Clicks and Unique Clicks. Which area of the application should provide this data?",
     "choices": [
         "Email Overlay View",
@@ -299,7 +299,7 @@ const QUESTIONS = [
 },
   {
     "id": 17,
-    "category": "Email Sending & Deliverability",
+    "category": "Email Marketing Best Practices",
     "question": "Northern Trail Outfitters (NTO) notices a larger than normal drop in engagement and a spike in unsubscribes after its sales team added a newsletter that is sent three times a week, in addition to the normal commercial marketing messages sent throughout the week. Which action should be taken to reduce the number of unsubscribes and increase engagement for NTO's program?",
     "choices": [
         "Create more focused segmented lists for messaging.",
@@ -402,7 +402,7 @@ const QUESTIONS = [
         "Overview tab in Email Studio",
         "Pending tab in Content Builder"
     ],
-    "correctAnswerText": "Pending tab in Content Builder",
+    "correctAnswerText": "Overview tab in Email Studio",
     "explanation": "Scheduled email send in Email Studio are managed and cancelled\nfrom the Overview tab, where pending/scheduled send apear and can be cancelled\nbefore they go out. (A) This is for monitoring journey performance metrics. (C)\nContent Builder Is for creating and managing content assets."
 },
   {
@@ -474,7 +474,7 @@ const QUESTIONS = [
         "Unshare the email.",
         "Cancel send using email."
     ],
-    "correctAnswerText": "Unshare the email.",
+    "correctAnswerText": "Withdraw email approval.",
     "explanation": "An approved email in Content Builder is locked from editing. The first\nstep to make any changes is to withdraw the approval, which unlocks the email for\nediting. Only then can edits be made and the email resubmitted for approval. (B)\n• Unsharing removes access for other business units but doesn't unlock\nthe email for editing. It's not a prerequisite for making changes and would disrupt\nthe other BUs unnecessarily. (C) This action removes or pauses a deployment job\nfrom the delivery queue, but it does not change the approval status or unlock the\nmaster template for copy edits."
 },
   {
@@ -498,7 +498,7 @@ const QUESTIONS = [
         "Use nested tags to create hierarchies.",
         "Leverage Einstein for content tagging."
     ],
-    "correctAnswerText": "Leverage Einstein for content tagging.",
+    "correctAnswerText": "Use nested tags to create hierarchies.",
     "explanation": "Nested tags create hierarchies (e.g., \"Apparel > Jackets > Winter\"), so\none specific tag implies all its parents, reducing the total number of tags needed\nwhile maintaining granularity. (A) The Customer Key is a unique identifier for\nassets, not a searchable tag — making it descriptive doesn't help with tag filtering.\n(C) Einstein Content Tagging auto-tags images but doesn't address the problem of\ntoo many tags being applied; it would likely add more, not fewer."
 },
   {
@@ -630,7 +630,7 @@ const QUESTIONS = [
         "Data Filter",
         "Attribute Group"
     ],
-    "correctAnswerText": "Attribute Group",
+    "correctAnswerText": "SQL Query Activity",
     "explanation": "A SQL Query Activity can pull and join data from both the Open Data\nView and the Purchase Data Extension into a single output data extension at send\ntime, making it available for dynamic content personalization from multiple\nsources. (B) Data Filters work on a single data source — they can't join or combine\ndata across the Open Data View and a separate data extension simultaneously. (C)\nAttribute Groups are used in Contact Builder to define relationships between data\nsources for segmentation, but they don't directly source data into an email for\ndynamic content personalization."
 },
   {
@@ -642,7 +642,7 @@ const QUESTIONS = [
         "Configure Journey Entry Event to 'allow no re-entry.'",
         "Configure Journey Settings to 'allow no re-entry.'"
     ],
-    "correctAnswerText": "Configure Journey Entry Event to 'allow no re-entry.'",
+    "correctAnswerText": "Configure Journey Settings to 'allow no re-entry.'",
     "explanation": "Configuring Journey Settings to 'allow no re-entry' ensures that once\na contact has entered the journey and received the thank you email, they cannot\nenter again on subsequent file drops — guaranteeing the email only sends the first\ntime they appear. (A) Deduping on email address at the send activity level only\nprevents duplicates within a single send batch, but doesn't stop the same contact\nfrom re-entering the journey on a future file drop. (B) The Journey Entry Event\ncontrols how contacts enter the journey, but 'allow no re-entry' is a Journey\nSettings-level configuration — not something set on the Entry Event itself."
 },
   {
@@ -798,7 +798,7 @@ const QUESTIONS = [
         "Filter the data based on a specific date range.",
         "Use Einstein Engagement scores to identify affected users."
     ],
-    "correctAnswerText": "Filter the data based on a specific date range.",
+    "correctAnswerText": "Query the data using a specific date range parameter.",
     "explanation": "A SQL Query Activity with a specific date range parameter can\nprecisely pull all customers who attempted to use coupon codes during the\naffected days from the relevant data extensions — automating the identification\nprocess accurately and at scale. (B) Data Filters can apply a date range condition,\nbut they're limited to a single data source and lack the flexibility to join multiple\ntables or handle complex logic that may be needed to identify affected customers\nacross order and complaint data. (C) Einstein Engagement Scores measure\nsubscriber engagement with emails (opens, clicks), not website transaction\nfailures — they have no way to identify customers affected by a coupon processing\noutage."
 },
   {
@@ -966,7 +966,7 @@ const QUESTIONS = [
         "Schedule and activate Triggered Sends for the messages in the journey.",
         "Select an automation to populate the Entry Source Data Extension."
     ],
-    "correctAnswerText": "Select the Recurring schedule type for the entry source in Journey Builder.",
+    "correctAnswerText": "Select an automation to populate the Entry Source Data Extension.",
     "explanation": "appropriate welcome series based on how they opted in, ensuring each subscriber\nonly receives communications through their chosen channel. (B) Having the\nsource channel in subscriber data is a prerequisite, but alone it doesn't configure\nthe journey to honor the opt-in method — you still need the entry sources and\nchannel-specific paths set up. (C) Sending both email and SMS to all subscribers\nregardless of their opt-in channel violates their communication preferences and\ncould breach consent regulations.\nAnswer: (C) Since the data is not in an attribute group, an Automation Studio\nautomation must populate the Entry Source Data Extension with the new compiled\ndata each time before the journey runs — this is the correct way to feed fresh data\ninto a journey when Contact Builder attribute groups aren't being used. (A)\nRecurring schedule on the entry source works when data is already available in a\nconnected data extension or attribute group, but it doesn't solve the problem of\ngetting the newly compiled data into the entry source in the first place. (B)\nTriggered Sends are for 1:1 real-time messages fired by API events, not for running\na full journey multiple times a day based on batch data updates."
 },
   {
@@ -978,7 +978,7 @@ const QUESTIONS = [
         "After the file import, use the transfer file activity to move data into data extensions in child BUs.",
         "Create automations that import the data directly into the child BUs to bypass the parent level BU."
     ],
-    "correctAnswerText": "Create automations that import the data directly into the child BUs to bypass the parent level BU.",
+    "correctAnswerText": "After the file import, use the filter activity to populate shared data extensions that are available to child BUs.",
     "explanation": "After importing at the parent BU, a Filter Activity can segment and\npopulate Shared Data Extensions — which are accessible by child BUs — making\nthe data available to individual office locations without granting them access to\nthe parent BU itself. (B) The Transfer File Activity moves files between SFTP\nlocations, not data between business units or into data extensions — it's the wrong\ntool for this use case. (C) Importing directly into child BUs would require separate\nfile imports and automations for each location, which is inefficient and doesn't\nleverage the centralized parent BU import that's already in place."
 },
   {
@@ -1014,7 +1014,7 @@ const QUESTIONS = [
         "Behavioral Trigger",
         "Engagement Split"
     ],
-    "correctAnswerText": "Behavioral Trigger",
+    "correctAnswerText": "Wait Until Event",
     "explanation": "what data is still needed. (B) A complex automation with multiple recurring emails\nand decisioning points is too advanced as a first step; it requires clean, reliable\ndata to already be in place before building out that kind of logic.\nAnswer: (A) Wait Until Event pauses the contact's progression in the journey until\na specific event occurs — in this case, a website purchase — and then continues\nthe journey once that event is detected, making it the right tool to connect the\nwelcome email to post-purchase steps. (B) Behavioral Triggers fire a new journey\nbased on email engagement (opens/clicks), not on external website events like a\npurchase — they can't listen for a transaction on NTO's website. (C) Engagement\nSplit branches contacts based on whether they opened or clicked an email, not\nbased on whether they made a purchase on the website."
 },
   {
@@ -1026,7 +1026,7 @@ const QUESTIONS = [
         "Wait Activity",
         "Data Extract Activity"
     ],
-    "correctAnswerText": "Wait Activity",
+    "correctAnswerText": "Verification Activity",
     "explanation": "Verification Activity checks that specified conditions are met — such\nas all required data extensions being present and populated — before allowing the\nautomation to proceed, stopping it if any agent's data is missing and preventing an\ninaccurate report from being generated. (B) Wait Activity simply pauses the\nautomation for a set amount of time; it doesn't check whether data conditions are\nmet or halt execution based on missing data. (C) Data Extract Activity exports data\ninto a file — it's an output step that runs after data is processed, not a gate that\nvalidates data completeness before the automation continues."
 },
   {
@@ -1050,7 +1050,7 @@ const QUESTIONS = [
         "Email Engagement",
         "Web Conversion"
     ],
-    "correctAnswerText": "Email Engagement",
+    "correctAnswerText": "Web Conversion",
     "explanation": "Web Conversion is the Path Optimizer winning criteria that measures\nconversions based on website activity — like orders placed — making it the right\nmetric to determine the best-performing path based on actual purchases. (A)\nManual Engagement requires a human to review results and manually select the\nwinner, rather than letting the system determine it based on website order data.\n(B) Email Engagement measures email-level interactions like opens and clicks, not\nwebsite conversions — it wouldn't capture whether a path actually drove\npurchases on NTO's website."
 },
   {
@@ -1122,7 +1122,7 @@ const QUESTIONS = [
         "Import Wizard",
         "Ingest API"
     ],
-    "correctAnswerText": "Import Activity",
+    "correctAnswerText": "Ingest API",
     "explanation": "The Ingest API is designed to import data from external cloud storage\nsources like Amazon S3 directly into Marketing Cloud Data Extensions — it's the\npurpose-built solution for this use case. (A) Import Activity pulls files from\nMarketing Cloud's own SFTP or safehouse, not directly from external cloud\nstorage like Amazon S3. (B) Import Wizard is a manual, one-time import tool for\nuploading files directly in the UI — it doesn't support automated or external cloud\nstorage connections like S3.\nAnswer: (C) A Filter Activity in Automation Studio re-runs the filter criteria and\nrefreshes the filtered data extension on a scheduled basis — it's the native,"
 },
   {
@@ -1242,7 +1242,7 @@ const QUESTIONS = [
         "Data Filter",
         "Filtered data extension"
     ],
-    "correctAnswerText": "SQL Query",
+    "correctAnswerText": "Filtered data extension",
     "explanation": "If the goal is the least steps, (C) Filtered Data Extension is actually the most\ndirect path: you create it by applying a filter condition (Country = 'Djibouti')\ndirectly on the source DE, and it immediately shows you the record count. A Data\nFilter (B) is essentially just the filter criteria — it doesn't display a count on its own\nwithout being applied somewhere. And SQL Query (A) still requires the most\nsteps.\nAnswer: (C) Creating a data filter directly on the data extension is the low-code"
 },
   {
@@ -1362,7 +1362,7 @@ const QUESTIONS = [
         "Subscribers Not Sent To report",
         "Not Sent Tracking Extract"
     ],
-    "correctAnswerText": "Not Sent Tracking Extract",
+    "correctAnswerText": "Subscribers Not Sent To report",
     "explanation": "The Subscribers Not Sent To report is a built-in SFMC report\nspecifically designed to identify subscribers who were in the sending audience but\ndid not receive the email — it's the most direct, purpose-built tool for this exact\nuse case. (A) the Sent Data View (_Sent) contains records of emails that were\nsuccessfully sent — it tells you who received messages, not who was excluded or\nmissed. (C) a Not Sent Tracking Extract can pull this data programmatically via\nAutomation Studio, but it requires more setup and configuration — it's not the\nquickest or most straightforward reporting tool for this need compared to the\ndedicated report."
 },
   {
@@ -1518,7 +1518,7 @@ const QUESTIONS = [
         "Email Sends by User",
         "Email Performance Over Time"
     ],
-    "correctAnswerText": "Email Performance Over Time",
+    "correctAnswerText": "Account Send Summary",
     "explanation": "administrative/compliance tool, not an engagement metrics tool. (C) SQL activity\nusing data views can technically query engagement data, but data views only\nretain data for a rolling 6-month window — making them unsuitable for accessing\nlast year's holiday engagement data, which would fall outside that retention\nperiod.\nAnswer: (A) Account Send Summary is an out-of-the-box report that lists all email\nsends across business units with basic metrics (sent, opens, clicks, bounces) for\neach send — it's exactly what NTO needs for a cross-BU overview of the past\ncalendar year's sends. (B) Email Sends by User breaks down send activity by the\nindividual user who initiated each send — it's focused on user-level attribution, not\na comprehensive cross-BU send listing with performance metrics. (C) Email\nPerformance Over Time aggregates engagement metrics across a time period into\ntrend data — it shows performance trends rather than a discrete listing of\nindividual sends with per-send metrics."
 },
   {
@@ -1542,7 +1542,7 @@ const QUESTIONS = [
         "Campaign Email Tracking Report",
         "Tracking Data Extract & file transfer"
     ],
-    "correctAnswerText": "Datorama Pivot Table",
+    "correctAnswerText": "Tracking Data Extract & file transfer",
     "explanation": "Tracking Data Extract combined with a File Transfer activity in\nAutomation Studio is the correct approach — it extracts the campaign\nperformance data on a scheduled basis and then transfers the output file to an\nexternal location like Azure Blob Storage, fully automating the weekly delivery. (A)\nDatorama Pivot Table is a data visualization and analysis feature within Datorama/\nMarketing Cloud Intelligence — it doesn't have native functionality to schedule and\npush exported files to an external storage location like Azure Blob. (B) Campaign\nEmail Tracking Report is a standard SFMC report for viewing campaign email\nmetrics within the platform — it can't be scheduled to automatically export and\ndeliver data to an external Azure Blob destination."
 },
   {
@@ -1578,7 +1578,7 @@ const QUESTIONS = [
         "Contacts Count",
         "Contacts Analytics"
     ],
-    "correctAnswerText": "Audience Engagement Over Time",
+    "correctAnswerText": "Contacts Analytics",
     "explanation": "Contacts Analytics report shows how the cross-channel contact\npopulation has changed over time — it tracks contact growth, deletions, and net\nchanges across channels, making it the right report for understanding how the\ncustomer population has evolved over the last 6 months. (A) Audience\nEngagement Over Time tracks engagement metrics (opens, clicks, etc.) over a\nperiod — it measures how subscribers are interacting with messages, not how the\nsize or composition of the contact population has changed. (B) Contacts Count\nprovides a current snapshot of the total number of contacts — it's a point-in-time\nfigure, not a historical trend view showing how the population has changed over a\n6-month window."
 },
   {
@@ -1602,7 +1602,7 @@ const QUESTIONS = [
         "Give emails unique names so they are easier to find in the tracking sends tab.",
         "Create folders in My Tracking and select where to send results when sending an email."
     ],
-    "correctAnswerText": "Give emails unique names so they are easier to find in the tracking sends tab.",
+    "correctAnswerText": "Create folders in My Tracking and select where to send results when sending an email.",
     "explanation": "Creating folders in My Tracking and assigning sends to specific\nfolders at send time is the purpose-built organizational feature in SFMC for\nmanaging large volumes of tracking results — it lets NTO group sends by\ncampaign, team, or category for easy navigation and reporting. (A) removing old\ntracking results is destructive and eliminates historical performance data that may\nstill be needed for analysis or reporting — it's not a sustainable or recommended\norganizational strategy. (B) giving emails unique names helps with searchability\nbut doesn't provide any structural organization — with hundreds of campaigns\nmonthly, a flat list of uniquely named sends is still difficult to navigate without a\nfolder hierarchy."
 },
   {
@@ -1722,7 +1722,7 @@ function renderTabButtons() {
 
   const tabs = [
     { label: "Dashboard", icon: "📊" },
-    { label: "Email Sending", weight: "24%" },
+    { label: "Email Marketing", weight: "24%" },
     { label: "Content Creation", weight: "22%" },
     { label: "Marketing Automation", weight: "28%" },
     { label: "Subscriber & Data", weight: "16%" },
