@@ -56,7 +56,7 @@ const $$ = (sel) => document.querySelectorAll(sel);
 // SECTION 1: PASSWORD SECURITY
 // ============================================================
 
-const TARGET_PASSWORD_HASH = "79f75d16"; // Hash of "Salesforce2026"
+const TARGET_PASSWORD_HASH = "c84eb735"; // Hash of "PPMALV"
 
 function djb2(str) {
   let hash = 5381;
