@@ -907,7 +907,7 @@ const QUESTIONS = [
         "Schedule an automation to refresh the filter activity each day."
     ],
     "correctAnswerText": "Schedule an automation to refresh the filter activity each day.",
-    "explanation": "Scheduling an Automation Studio automation with a Filter Activity to\nrun daily ensures the data extension is refreshed each day with the previous day's\nrecords automatically and reliably. (A) \"Automatically Refresh Upon Sending\" only\nre-runs the filter at send time, not on a daily standalone basis — it doesn't\nguarantee the DE is updated independently of a send. (B) There is no native \"auto-\nrefresh daily\" property setting on a filtered data extension — this isn't a real\nconfiguration option in Marketing Cloud.\nAnswer: (B) Content Builder Approvals is the actual built-in feature in Marketing"
+    "explanation": "Scheduling an Automation Studio automation with a Filter Activity to run daily ensures the data extension is refreshed each day with the previous day's records automatically and reliably. (A) \"Automatically Refresh Upon Sending\" only re-runs the filter at send time, not on a daily standalone basis — it doesn't guarantee the DE is updated independently of a send. (B) There is no native \"auto-refresh daily\" property setting on a filtered data extension — this isn't a real configuration option in Marketing Cloud."
 },
   {
     "id": 68,
@@ -919,7 +919,7 @@ const QUESTIONS = [
         "Approval Workflow"
     ],
     "correctAnswerText": "Content Builder Approvals",
-    "explanation": "Scheduling an Automation Studio automation with a Filter Activity to\nrun daily ensures the data extension is refreshed each day with the previous day's\nrecords automatically and reliably. (A) \"Automatically Refresh Upon Sending\" only\nre-runs the filter at send time, not on a daily standalone basis — it doesn't\nguarantee the DE is updated independently of a send. (B) There is no native \"auto-\nrefresh daily\" property setting on a filtered data extension — this isn't a real\nconfiguration option in Marketing Cloud.\nAnswer: (B) Content Builder Approvals is the actual built-in feature in Marketing"
+    "explanation": "Content Builder Approvals is the actual built-in feature in Marketing Cloud that enables a structured approval process — allowing marketers to submit emails for review, notifying the creative team automatically, and requiring sign-off before sending. (A) Subscriber Preview is a manual rendering tool, not an approval or proofing workflow. (C) 'Approval Workflow' is not a distinct Marketing Cloud feature — it's just a generic term that describes what Content Builder Approvals does, making (B) the precise, correct answer."
 },
   {
     "id": 69,
@@ -931,7 +931,7 @@ const QUESTIONS = [
         "Place the audience SQL Query Activity below the exclusion SQL Query Activity."
     ],
     "correctAnswerText": "Place the audience SQL Query Activity in a step after the exclusion SQL Query Activity.",
-    "explanation": "Cloud that enables a structured approval process — allowing marketers to submit\nemails for review, notifying the creative team automatically, and requiring sign-off\nbefore sending. (A) Subscriber Preview is a manual rendering tool, not an approval\nor proofing workflow. (C) \"Approval Workflow\" is not a distinct Marketing Cloud\nfeature — it's just a generic term that describes what Content Builder Approvals\ndoes, making B the precise, correct answer.\nAnswer: (A) In Automation Studio, activities within the same step run in parallel,\nwhile activities in separate sequential steps run in order — placing the audience\nquery in a step after the exclusion query guarantees the exclusion data extension\nis fully updated before the audience query runs. (B) A wait step introduces a time\ndelay but doesn't ensure the exclusion query has completed — it's an unreliable\nway to sequence dependent queries. (C) Placing activities \"below\" each other in\nthe same step still runs them in parallel, not sequentially — the exclusion query is\nnot guaranteed to finish first."
+    "explanation": "In Automation Studio, activities within the same step run in parallel, while activities in separate sequential steps run in order — placing the audience query in a step after the exclusion query guarantees the exclusion data extension is fully updated before the audience query runs. (B) A wait step introduces a time delay but doesn't ensure the exclusion query has completed — it's an unreliable way to sequence dependent queries. (C) Placing activities \"below\" each other in the same step still runs them in parallel, not sequentially — the exclusion query is not guaranteed to finish first."
 },
   {
     "id": 70,
@@ -943,7 +943,7 @@ const QUESTIONS = [
         "Add each Send Email activity to different steps in an automation."
     ],
     "correctAnswerText": "Add each Send Email activity to different steps in an automation.",
-    "explanation": "Placing each Send Email activity in its own separate step ensures\nAutomation Studio completes each step fully before moving to the next,\nguaranteeing sequential execution. (A) Adding all three activities to a single step\ncauses them to run in parallel simultaneously, not one after another. (B) There is\nno native \"Verification activity\" in Automation Studio — this is not a real feature.\nAnswer: (A) Creating a separate Entry Source for each channel (one for email opt-\nins, one for SMS opt-ins) allows Journey Builder to route subscribers into the"
+    "explanation": "Placing each Send Email activity in its own separate step ensures Automation Studio completes each step fully before moving to the next, guaranteeing sequential execution. (A) Adding all three activities to a single step causes them to run in parallel simultaneously, not one after another. (B) There is no native \"Verification activity\" in Automation Studio — this is not a real feature."
 },
   {
     "id": 71,
@@ -955,7 +955,7 @@ const QUESTIONS = [
         "Send both email and SMS to ensure subscribers get NTO's messages."
     ],
     "correctAnswerText": "Create one Entry Source for each messaging channel.",
-    "explanation": "Placing each Send Email activity in its own separate step ensures\nAutomation Studio completes each step fully before moving to the next,\nguaranteeing sequential execution. (A) Adding all three activities to a single step\ncauses them to run in parallel simultaneously, not one after another. (B) There is\nno native \"Verification activity\" in Automation Studio — this is not a real feature.\nAnswer: (A) Creating a separate Entry Source for each channel (one for email opt-\nins, one for SMS opt-ins) allows Journey Builder to route subscribers into the"
+    "explanation": "Creating a separate Entry Source for each channel (one for email opt-ins, one for SMS opt-ins) allows Journey Builder to route subscribers into the appropriate welcome series based on how they opted in, ensuring each subscriber only receives communications through their chosen channel. (B) Having the source channel in subscriber data is a prerequisite, but alone it doesn't configure the journey to honor the opt-in method — you still need the entry sources and channel-specific paths set up. (C) Sending both email and SMS to all subscribers regardless of their opt-in channel violates their communication preferences and could breach consent regulations."
 },
   {
     "id": 72,
@@ -967,7 +967,7 @@ const QUESTIONS = [
         "Select an automation to populate the Entry Source Data Extension."
     ],
     "correctAnswerText": "Select an automation to populate the Entry Source Data Extension.",
-    "explanation": "appropriate welcome series based on how they opted in, ensuring each subscriber\nonly receives communications through their chosen channel. (B) Having the\nsource channel in subscriber data is a prerequisite, but alone it doesn't configure\nthe journey to honor the opt-in method — you still need the entry sources and\nchannel-specific paths set up. (C) Sending both email and SMS to all subscribers\nregardless of their opt-in channel violates their communication preferences and\ncould breach consent regulations.\nAnswer: (C) Since the data is not in an attribute group, an Automation Studio\nautomation must populate the Entry Source Data Extension with the new compiled\ndata each time before the journey runs — this is the correct way to feed fresh data\ninto a journey when Contact Builder attribute groups aren't being used. (A)\nRecurring schedule on the entry source works when data is already available in a\nconnected data extension or attribute group, but it doesn't solve the problem of\ngetting the newly compiled data into the entry source in the first place. (B)\nTriggered Sends are for 1:1 real-time messages fired by API events, not for running\na full journey multiple times a day based on batch data updates."
+    "explanation": "Since the data is not in an attribute group, an Automation Studio automation must populate the Entry Source Data Extension with the new compiled data each time before the journey runs — this is the correct way to feed fresh data into a journey when Contact Builder attribute groups aren't being used. (A) Recurring schedule on the entry source works when data is already available in a connected data extension or attribute group, but it doesn't solve the problem of getting the newly compiled data into the entry source in the first place. (B) Triggered Sends are for 1:1 real-time messages fired by API events, not for running a full journey multiple times a day based on batch data updates."
 },
   {
     "id": 73,
@@ -991,7 +991,7 @@ const QUESTIONS = [
         "Create from template and choose triggered send template."
     ],
     "correctAnswerText": "Create from template and choose triggered send template.",
-    "explanation": "When you create a Data Extension using the\nTriggeredSendDataExtension template, Marketing Cloud automatically injects\nthe required fields (like SubscriberKey and EmailAddress) along with the exact\nunderlying database structure necessary for the Triggered Send API engine to\nappend data extension records as subscribers trigger emails.\nAnswer: (C) Regularly importing subscriber data and keeping key data extensions\nup to date is the foundational first step for any email marketing automation —\nwithout accurate, fresh data, no other automation can function effectively. (A)\nDeleting old data extensions, emails, and reports is a maintenance task, not a\nstrategic first automation step — and it carries risk if done before understanding"
+    "explanation": "When you create a Data Extension using the TriggeredSendDataExtension template, Marketing Cloud automatically injects the required fields (like SubscriberKey and EmailAddress) along with the exact underlying database structure necessary for the Triggered Send API engine to append data extension records as subscribers trigger emails."
 },
   {
     "id": 75,
@@ -1003,7 +1003,7 @@ const QUESTIONS = [
         "An automation that imports subscriber data regularly and updates key data extensions"
     ],
     "correctAnswerText": "An automation that imports subscriber data regularly and updates key data extensions",
-    "explanation": "When you create a Data Extension using the\nTriggeredSendDataExtension template, Marketing Cloud automatically injects\nthe required fields (like SubscriberKey and EmailAddress) along with the exact\nunderlying database structure necessary for the Triggered Send API engine to\nappend data extension records as subscribers trigger emails.\nAnswer: (C) Regularly importing subscriber data and keeping key data extensions\nup to date is the foundational first step for any email marketing automation —\nwithout accurate, fresh data, no other automation can function effectively. (A)\nDeleting old data extensions, emails, and reports is a maintenance task, not a\nstrategic first automation step — and it carries risk if done before understanding"
+    "explanation": "Regularly importing subscriber data and keeping key data extensions up to date is the foundational first step for any email marketing automation — without accurate, fresh data, no other automation can function effectively. (A) Deleting old data extensions, emails, and reports is a maintenance task, not a strategic first automation step — and it carries risk if done before understanding what data is still needed. (B) A complex automation with multiple recurring emails and decisioning points is too advanced as a first step; it requires clean, reliable data to already be in place before building out that kind of logic."
 },
   {
     "id": 76,
@@ -1015,7 +1015,7 @@ const QUESTIONS = [
         "Engagement Split"
     ],
     "correctAnswerText": "Wait Until Event",
-    "explanation": "what data is still needed. (B) A complex automation with multiple recurring emails\nand decisioning points is too advanced as a first step; it requires clean, reliable\ndata to already be in place before building out that kind of logic.\nAnswer: (A) Wait Until Event pauses the contact's progression in the journey until\na specific event occurs — in this case, a website purchase — and then continues\nthe journey once that event is detected, making it the right tool to connect the\nwelcome email to post-purchase steps. (B) Behavioral Triggers fire a new journey\nbased on email engagement (opens/clicks), not on external website events like a\npurchase — they can't listen for a transaction on NTO's website. (C) Engagement\nSplit branches contacts based on whether they opened or clicked an email, not\nbased on whether they made a purchase on the website."
+    "explanation": "Wait Until Event pauses the contact's progression in the journey until a specific event occurs — in this case, a website purchase — and then continues the journey once that event is detected, making it the right tool to connect the welcome email to post-purchase steps. (B) Behavioral Triggers fire a new journey based on email engagement (opens/clicks), not on external website events like a purchase — they can't listen for a transaction on NTO's website. (C) Engagement Split branches contacts based on whether they opened or clicked an email, not based on whether they made a purchase on the website."
 },
   {
     "id": 77,
@@ -1123,7 +1123,7 @@ const QUESTIONS = [
         "Ingest API"
     ],
     "correctAnswerText": "Ingest API",
-    "explanation": "The Ingest API is designed to import data from external cloud storage\nsources like Amazon S3 directly into Marketing Cloud Data Extensions — it's the\npurpose-built solution for this use case. (A) Import Activity pulls files from\nMarketing Cloud's own SFTP or safehouse, not directly from external cloud\nstorage like Amazon S3. (B) Import Wizard is a manual, one-time import tool for\nuploading files directly in the UI — it doesn't support automated or external cloud\nstorage connections like S3.\nAnswer: (C) A Filter Activity in Automation Studio re-runs the filter criteria and\nrefreshes the filtered data extension on a scheduled basis — it's the native,"
+    "explanation": "The Ingest API is designed to import data from external cloud storage sources like Amazon S3 directly into Marketing Cloud Data Extensions — it's the purpose-built solution for this use case. (A) Import Activity pulls files from Marketing Cloud's own SFTP or safehouse, not directly from external cloud storage like Amazon S3. (B) Import Wizard is a manual, one-time import tool for uploading files directly in the UI — it doesn't support automated or external cloud storage connections like S3."
 },
   {
     "id": 86,
@@ -1135,7 +1135,7 @@ const QUESTIONS = [
         "Use a Filter Activity in Automation Studio."
     ],
     "correctAnswerText": "Use a Filter Activity in Automation Studio.",
-    "explanation": "The Ingest API is designed to import data from external cloud storage\nsources like Amazon S3 directly into Marketing Cloud Data Extensions — it's the\npurpose-built solution for this use case. (A) Import Activity pulls files from\nMarketing Cloud's own SFTP or safehouse, not directly from external cloud\nstorage like Amazon S3. (B) Import Wizard is a manual, one-time import tool for\nuploading files directly in the UI — it doesn't support automated or external cloud\nstorage connections like S3.\nAnswer: (C) A Filter Activity in Automation Studio re-runs the filter criteria and\nrefreshes the filtered data extension on a scheduled basis — it's the native,"
+    "explanation": "A Filter Activity in Automation Studio re-runs the filter criteria and refreshes the filtered data extension on a scheduled basis — it's the native, purpose-built way to keep a filtered DE up to date automatically before a daily send. (A) The Send Activity executes the email send itself; it doesn't have the capability to refresh or repopulate a filtered data extension as part of its configuration. (B) Journey Builder manages contact flows and messaging sequences but has no functionality to refresh or repopulate a filtered data extension."
 },
   {
     "id": 87,
@@ -1147,7 +1147,7 @@ const QUESTIONS = [
         "Universal Unsubscribe"
     ],
     "correctAnswerText": "List Unsubscribe header",
-    "explanation": "purpose-built way to keep a filtered DE up to date automatically before a daily\nsend. (A) The Send Activity executes the email send itself; it doesn't have the\ncapability to refresh or repopulate a filtered data extension as part of its\nconfiguration. (B) Journey Builder manages contact flows and messaging\nsequences but has no functionality to refresh or repopulate a filtered data\nextension.\nAnswer: (B) The List Unsubscribe header is a one-click unsubscribe mechanism\nbuilt into the email client (like Gmail or Outlook) that processes unsubscribes\nthrough a mailto reply — without RMM configured to handle those reply emails,\nMarketing Cloud still logs them as RMM-related unsubscribes. (A) Profile Center\nUnsubscribe is processed directly through Marketing Cloud's Subscription Center\nUI, not through reply mail — it wouldn't generate RMM-attributed unsubscribe\nreasons. (C) Universal Unsubscribe opts a subscriber out of all emails globally and\nis processed within Marketing Cloud itself, not through reply mail handling."
+    "explanation": "The List Unsubscribe header is a one-click unsubscribe mechanism built into the email client (like Gmail or Outlook) that processes unsubscribes through a mailto reply — without RMM configured to handle those reply emails, Marketing Cloud still logs them as RMM-related unsubscribes. (A) Profile Center Unsubscribe is processed directly through Marketing Cloud's Subscription Center UI, not through reply mail — it wouldn't generate RMM-attributed unsubscribe reasons. (C) Universal Unsubscribe opts a subscriber out of all emails globally and is processed within Marketing Cloud itself, not through reply mail handling."
 },
   {
     "id": 88,
@@ -1183,7 +1183,7 @@ const QUESTIONS = [
         "Add the subscriber to the auto-suppression list."
     ],
     "correctAnswerText": "Add the subscriber to the auto-suppression list.",
-    "explanation": "Es la herramienta ideal en Salesforce Marketing Cloud para prevenir\nde forma proactiva que direcciones de correo electrónico específicas reciban\ncomunicaciones de tipo comercial.\nAnswer: (B) A field marked as Primary Key uniquely identifies each record in the\ndata extension, and when a SQL Query Activity runs with an \"Update\" or \"Upsert\"\naction, it uses the Primary Key to match incoming records to existing ones —"
+    "explanation": "Es la herramienta ideal en Salesforce Marketing Cloud para prevenir de forma proactiva que direcciones de correo electrónico específicas reciban comunicaciones de tipo comercial."
 },
   {
     "id": 91,
@@ -1195,7 +1195,7 @@ const QUESTIONS = [
         "Is Sendable"
     ],
     "correctAnswerText": "Primary Key",
-    "explanation": "Es la herramienta ideal en Salesforce Marketing Cloud para prevenir\nde forma proactiva que direcciones de correo electrónico específicas reciban\ncomunicaciones de tipo comercial.\nAnswer: (B) A field marked as Primary Key uniquely identifies each record in the\ndata extension, and when a SQL Query Activity runs with an \"Update\" or \"Upsert\"\naction, it uses the Primary Key to match incoming records to existing ones —"
+    "explanation": "A field marked as Primary Key uniquely identifies each record in the data extension, and when a SQL Query Activity runs with an \"Update\" or \"Upsert\" action, it uses the Primary Key to match incoming records to existing ones — without it, the query can't determine which records to update. (A) Nullable simply means a field is allowed to contain no value, which has no bearing on whether a SQL query can write to the data extension. (C) Is Sendable designates the data extension as usable for email sends by linking a subscriber key field to All Subscribers — it's about send eligibility, not about enabling data writes from a query activity."
 },
   {
     "id": 92,
@@ -1207,7 +1207,7 @@ const QUESTIONS = [
         "Add an Auto-Suppression list to the default sender profile."
     ],
     "correctAnswerText": "Configure Auto-Suppression list for the Commercial classification.",
-    "explanation": "without it, the query can't determine which records to update. (A) Nullable simply\nmeans a field is allowed to contain no value, which has no bearing on whether a\nSQL query can write to the data extension. (C) Is Sendable designates the data\nextension as usable for email sends by linking a subscriber key field to All\nSubscribers — it's about send eligibility, not about enabling data writes from a\nquery activity.\nAnswer: (A) Configuring an Auto-Suppression list scoped to the Commercial\nclassification ensures those subscribers are automatically excluded from every\npromotional/commercial send across the account — it's the most precise and\nreliable way to block a specific group from that email type. (B) adding subscribers\nto the Account opt-out list globally unsubscribes them from all email types\n(commercial and transactional), which is heavier-handed than needed and could\nblock messages the subscriber still wants. (C) attaching an Auto-Suppression list\nto a default sender profile ties suppression to a specific sender identity rather than\nthe email classification, so it wouldn't consistently cover all promotional sends if\nmultiple sender profiles are in use."
+    "explanation": "Configuring an Auto-Suppression list scoped to the Commercial classification ensures those subscribers are automatically excluded from every promotional/commercial send across the account — it's the most precise and reliable way to block a specific group from that email type. (B) adding subscribers to the Account opt-out list globally unsubscribes them from all email types (commercial and transactional), which is heavier-handed than needed and could block messages the subscriber still wants. (C) attaching an Auto-Suppression list to a default sender profile ties suppression to a specific sender identity rather than the email classification, so it wouldn't consistently cover all promotional sends if multiple sender profiles are in use."
 },
   {
     "id": 93,
@@ -1243,7 +1243,7 @@ const QUESTIONS = [
         "Filtered data extension"
     ],
     "correctAnswerText": "Filtered data extension",
-    "explanation": "If the goal is the least steps, (C) Filtered Data Extension is actually the most\ndirect path: you create it by applying a filter condition (Country = 'Djibouti')\ndirectly on the source DE, and it immediately shows you the record count. A Data\nFilter (B) is essentially just the filter criteria — it doesn't display a count on its own\nwithout being applied somewhere. And SQL Query (A) still requires the most\nsteps.\nAnswer: (C) Creating a data filter directly on the data extension is the low-code"
+    "explanation": "If the goal is the least steps, (C) Filtered Data Extension is actually the most direct path: you create it by applying a filter condition (Country = 'Djibouti') directly on the source DE, and it immediately shows you the record count. A Data Filter (B) is essentially just the filter criteria — it doesn't display a count on its own without being applied somewhere. And SQL Query (A) still requires the most steps."
 },
   {
     "id": 96,
@@ -1255,7 +1255,7 @@ const QUESTIONS = [
         "Create a data filter on the data extension."
     ],
     "correctAnswerText": "Create a data filter on the data extension.",
-    "explanation": "If the goal is the least steps, (C) Filtered Data Extension is actually the most\ndirect path: you create it by applying a filter condition (Country = 'Djibouti')\ndirectly on the source DE, and it immediately shows you the record count. A Data\nFilter (B) is essentially just the filter criteria — it doesn't display a count on its own\nwithout being applied somewhere. And SQL Query (A) still requires the most\nsteps.\nAnswer: (C) Creating a data filter directly on the data extension is the low-code"
+    "explanation": "Creating a data filter directly on the data extension is the low-code approach — you use the point-and-click filter UI to set conditions (age between 64–65, not enrolled, opted into email) without writing any code, producing the segment from the existing DE. (A) Writing a SQL query is a code solution, which directly contradicts the 'low-code' requirement in the question. (B) Filtering the CSV before import is a manual, upstream process that would need to be repeated every time the data is refreshed — it's not a reusable or scalable in-platform segmentation method."
 },
   {
     "id": 97,
@@ -1267,7 +1267,7 @@ const QUESTIONS = [
         "Engagement Split"
     ],
     "correctAnswerText": "Scoring Split",
-    "explanation": "approach — you use the point-and-click filter UI to set conditions (age between\n64–65, not enrolled, opted into email) without writing any code, producing the\nsegment from the existing DE. (A) writing a SQL query is a code solution, which\ndirectly contradicts the \"low-code\" requirement in the question. (B) filtering the\nCSV before import is a manual, upstream process that would need to be repeated\nevery time the data is refreshed — it's not a reusable or scalable in-platform\nsegmentation method.\nEsta actividad utiliza los datos predictivos de Einstein Engagement Scoring para\nsegmentar a los clientes en el canvas de Journey Builder. Permite dividir los\ncaminos de los contactos basándose en su nivel de interacción predecible\n(personas), lo cual es ideal para separar de manera automatizada a los clientes\nmás comprometidos (most engaged) de los menos comprometidos (least\nengaged) y entregarles contenido dinámico personalizado según su perfil."
+    "explanation": "Esta actividad utiliza los datos predictivos de Einstein Engagement Scoring para segmentar a los clientes en el canvas de Journey Builder. Permite dividir los caminos de los contactos basándose en su nivel de interacción predecible (personas), lo cual es ideal para separar de manera automatizada a los clientes más comprometidos (most engaged) de los menos comprometidos (least engaged) y entregarles contenido dinámico personalizado según su perfil. (B) Frequency Split divides contacts based on how many messages they have received in a set period, not by engagement level — it's a volume control tool, not an engagement-based segmenter. (C) Engagement Split routes contacts based on whether they opened or clicked a specific previous email — it evaluates one past action, not a predictive engagement score across behaviors."
 },
   {
     "id": 98,
@@ -1279,7 +1279,7 @@ const QUESTIONS = [
         "Data Designer"
     ],
     "correctAnswerText": "Data Designer",
-    "explanation": "Data Designer is the tool that should be used to create a sendable\ndata extension from various tables including orders, subscribers, and product line\nitems. Data Designer allows you to create custom data extensions that can be\nused as an entry source for a journey\nAnswer: (A) In SFMC, All Subscribers is the master list that controls the email"
+    "explanation": "Data Designer is the tool that should be used to create a sendable data extension from various tables including orders, subscribers, and product line items. Data Designer allows you to create custom data extensions that can be used as an entry source for a journey. (A) Automation Studio is used for automating data processes and scheduling — it doesn't provide the data relationship modeling and extension creation capabilities needed here. (B) Audience Studio is a separate platform for audience management and segmentation across channels — it's not used for creating data extensions within Marketing Cloud."
 },
   {
     "id": 99,
@@ -1291,7 +1291,7 @@ const QUESTIONS = [
         "The customer has not opted in again with the new address."
     ],
     "correctAnswerText": "The email address has not been updated in All Subscribers.",
-    "explanation": "Data Designer is the tool that should be used to create a sendable\ndata extension from various tables including orders, subscribers, and product line\nitems. Data Designer allows you to create custom data extensions that can be\nused as an entry source for a journey\nAnswer: (A) In SFMC, All Subscribers is the master list that controls the email"
+    "explanation": "In SFMC, All Subscribers is the master list that controls the email address used for delivery — even if the new address exists in a data extension, emails are sent to the address stored in All Subscribers for that subscriber key. If that record hasn't been updated, the old address is still what gets used. (B) An unsupported domain would cause a bounce or delivery failure entirely, not a redirect to a different address — the customer is still receiving emails, just at the wrong one. (C) Opting in again is not required simply to update an email address — the issue here is a data sync problem between the data extension and All Subscribers, not a consent/opt-in gap."
 },
   {
     "id": 100,
@@ -1303,7 +1303,7 @@ const QUESTIONS = [
         "Append"
     ],
     "correctAnswerText": "Overwrite",
-    "explanation": "address used for delivery — even if the new address exists in a data extension,\nemails are sent to the address stored in All Subscribers for that subscriber key. If\nthat record hasn't been updated, the old address is still what gets used. (B) an\nunsupported domain would cause a bounce or delivery failure entirely, not a\nredirect to a different address — the customer is still receiving emails, just at the\nwrong one. (C) opting in again is not required simply to update an email address —\nthe issue here is a data sync problem between the data extension and All\nSubscribers, not a consent/opt-in gap.\nAnswer: (A) Overwrite clears the entire data extension and replaces it with the\nincoming feed on each import — since the daily file only contains currently active\ncustomers, the DE will always reflect exactly that set with no stale records\nremaining. (B) Add and Update adds new records and updates existing ones but\nnever removes records — customers who no longer meet the active criteria would\nremain in the DE indefinitely, making the data stale. (C) Append only adds new\nrecords without updating or removing existing ones — it's the least suitable option\nhere since it would accumulate inactive customers over time."
+    "explanation": "Overwrite clears the entire data extension and replaces it with the incoming feed on each import — since the daily file only contains currently active customers, the DE will always reflect exactly that set with no stale records remaining. (B) Add and Update adds new records and updates existing ones but never removes records — customers who no longer meet the active criteria would remain in the DE indefinitely, making the data stale. (C) Append only adds new records without updating or removing existing ones — it's the least suitable option here since it would accumulate inactive customers over time."
 },
   {
     "id": 101,
@@ -1447,7 +1447,7 @@ const QUESTIONS = [
         "Einstein Engagement Frequency"
     ],
     "correctAnswerText": "Einstein Engagement Scoring",
-    "explanation": "Einstein Engagement Scoring provides insights into how changes, such as the\ncolor of a CTA button, impact the likelihood of subscribers engaging with emails. It\nuses predictive analytics to score and segment subscribers based on their\nengagement behaviors, allowing marketers to see the lift in engagement metrics\nlike click-through rates.\nAnswer: (B) Einstein Messaging Insights specifically provides notification badges\nthat alert marketers to abnormal subscriber behavior and performance anomalies\n— such as unusual drops in open or click rates — directly within the Email Studio"
+    "explanation": "Einstein Engagement Scoring provides insights into how changes, such as the color of a CTA button, impact the likelihood of subscribers engaging with emails. It uses predictive analytics to score and segment subscribers based on their engagement behaviors, allowing marketers to see the lift in engagement metrics like click-through rates."
 },
   {
     "id": 113,
@@ -1459,7 +1459,7 @@ const QUESTIONS = [
         "Einstein Engagement Scoring"
     ],
     "correctAnswerText": "Einstein Messaging Insights",
-    "explanation": "Einstein Engagement Scoring provides insights into how changes, such as the\ncolor of a CTA button, impact the likelihood of subscribers engaging with emails. It\nuses predictive analytics to score and segment subscribers based on their\nengagement behaviors, allowing marketers to see the lift in engagement metrics\nlike click-through rates.\nAnswer: (B) Einstein Messaging Insights specifically provides notification badges\nthat alert marketers to abnormal subscriber behavior and performance anomalies\n— such as unusual drops in open or click rates — directly within the Email Studio"
+    "explanation": "Einstein Messaging Insights specifically provides notification badges that alert marketers to abnormal subscriber behavior and performance anomalies — such as unusual drops in open or click rates — directly within the Email Studio send results, making it exactly the feature described. (A) Einstein Copy Insights analyzes the language and copy in subject lines to provide recommendations for improving engagement — it's a content optimization tool, not a performance anomaly alert system. (C) Einstein Engagement Scoring assigns individual subscribers a score predicting their likelihood to engage or unsubscribe — it's a per-contact predictive tool, not a notification/badge system for flagging send-level performance issues."
 },
   {
     "id": 114,
@@ -1471,7 +1471,7 @@ const QUESTIONS = [
         "Review opens and clicks activity summaries."
     ],
     "correctAnswerText": "Define a goal for each journey.",
-    "explanation": "send results, making it exactly the feature described. (A) Einstein Copy Insights\nanalyzes the language and copy in subject lines to provide recommendations for\nimproving engagement — it's a content optimization tool, not a performance\nanomaly alert system. (C) Einstein Engagement Scoring assigns individual\nsubscribers a score predicting their likelihood to engage or unsubscribe — it's a\nper-contact predictive tool, not a notification/badge system for flagging send-level\nperformance issues.\nAnswer: (A) Defining a Goal for each journey enables Journey Builder to track how\nmany contacts achieve the desired outcome (e.g., making a purchase, completing\na registration) — this is the purpose-built mechanism for measuring overall journey\nperformance against a business objective. (B) exporting journey email analytics\nprovides raw send/open/click data for individual messages within the journey, but\nit doesn't give a holistic view of whether the journey is achieving its intended\nbusiness goal — it's granular message-level data, not journey-level performance\nevaluation. (C) reviewing opens and clicks activity summaries shows engagement\nmetrics at the email activity level, which is useful for individual message\nperformance but doesn't measure whether contacts are progressing through and\ncompleting the journey's intended purpose."
+    "explanation": "Defining a Goal for each journey enables Journey Builder to track how many contacts achieve the desired outcome (e.g., making a purchase, completing a registration) — this is the purpose-built mechanism for measuring overall journey performance against a business objective. (B) exporting journey email analytics provides raw send/open/click data for individual messages within the journey, but it doesn't give a holistic view of whether the journey is achieving its intended business goal — it's granular message-level data, not journey-level performance evaluation. (C) reviewing opens and clicks activity summaries shows engagement metrics at the email activity level, which is useful for individual message performance but doesn't measure whether contacts are progressing through and completing the journey's intended purpose."
 },
   {
     "id": 115,
@@ -1495,7 +1495,7 @@ const QUESTIONS = [
         "Sender Profile"
     ],
     "correctAnswerText": "Campaigns",
-    "explanation": "En los informes de Datorama (Intelligence Reports for Marketing Cloud), asociar\ntus correos electrónicos a Campañas estructuradas dentro de Marketing Cloud es\nla mejor práctica para optimizar la usabilidad del tablero.\nAnswer: (A) Tracking Data Extract in Automation Studio is specifically designed to\nexport historical engagement data (opens, clicks, bounces, unsubscribes, etc.)\nfrom SFMC — it's the right tool to pull last year's holiday engagement data for\ncomparison analysis. (B) Audit Trail extract captures a log of user actions and\nsystem activity within the SFMC account (who did what and when) — it's an"
+    "explanation": "En los informes de Datorama (Intelligence Reports for Marketing Cloud), asociar tus correos electrónicos a Campañas estructuradas dentro de Marketing Cloud es la mejor práctica para optimizar la usabilidad del tablero."
 },
   {
     "id": 117,
@@ -1507,7 +1507,7 @@ const QUESTIONS = [
         "SQL activity using data views"
     ],
     "correctAnswerText": "Tracking Data extract",
-    "explanation": "En los informes de Datorama (Intelligence Reports for Marketing Cloud), asociar\ntus correos electrónicos a Campañas estructuradas dentro de Marketing Cloud es\nla mejor práctica para optimizar la usabilidad del tablero.\nAnswer: (A) Tracking Data Extract in Automation Studio is specifically designed to\nexport historical engagement data (opens, clicks, bounces, unsubscribes, etc.)\nfrom SFMC — it's the right tool to pull last year's holiday engagement data for\ncomparison analysis. (B) Audit Trail extract captures a log of user actions and\nsystem activity within the SFMC account (who did what and when) — it's an"
+    "explanation": "Tracking Data Extract in Automation Studio is specifically designed to export historical engagement data (opens, clicks, bounces, unsubscribes, etc.) from SFMC — it's the right tool to pull last year's holiday engagement data for comparison analysis. (B) Audit Trail extract captures a log of user actions and system activity within the SFMC account (who did what and when) — it's an administrative/compliance tool, not an engagement metrics tool. (C) SQL activity using data views can technically query engagement data, but data views only retain data for a rolling 6-month window — making them unsuitable for accessing last year's holiday engagement data, which would fall outside that retention period."
 },
   {
     "id": 118,
@@ -1519,7 +1519,7 @@ const QUESTIONS = [
         "Email Performance Over Time"
     ],
     "correctAnswerText": "Account Send Summary",
-    "explanation": "administrative/compliance tool, not an engagement metrics tool. (C) SQL activity\nusing data views can technically query engagement data, but data views only\nretain data for a rolling 6-month window — making them unsuitable for accessing\nlast year's holiday engagement data, which would fall outside that retention\nperiod.\nAnswer: (A) Account Send Summary is an out-of-the-box report that lists all email\nsends across business units with basic metrics (sent, opens, clicks, bounces) for\neach send — it's exactly what NTO needs for a cross-BU overview of the past\ncalendar year's sends. (B) Email Sends by User breaks down send activity by the\nindividual user who initiated each send — it's focused on user-level attribution, not\na comprehensive cross-BU send listing with performance metrics. (C) Email\nPerformance Over Time aggregates engagement metrics across a time period into\ntrend data — it shows performance trends rather than a discrete listing of\nindividual sends with per-send metrics."
+    "explanation": "Account Send Summary is an out-of-the-box report that lists all email sends across business units with basic metrics (sent, opens, clicks, bounces) for each send — it's exactly what NTO needs for a cross-BU overview of the past calendar year's sends. (B) Email Sends by User breaks down send activity by the individual user who initiated each send — it's focused on user-level attribution, not a comprehensive cross-BU send listing with performance metrics. (C) Email Performance Over Time aggregates engagement metrics across a time period into trend data — it shows performance trends rather than a discrete listing of individual sends with per-send metrics."
 },
   {
     "id": 119,
